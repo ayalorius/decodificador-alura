@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/logoAlura.png" type="image/x-icon">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logoAlura" src="/imagens/logoAlura.png" alt="Logo da Alura">
+    </header>
+
+<main>
+    <!--Onde vai inserir o texto -->
+    <section>
+        <textarea class="text-area" id="input-texto" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+
+        <div class="informacao">
+            <h6>Apenas letras minúsculas e sem acento.</h6>
+        </div>
+
+        <div class="botoes">
+            <button class="btn-encriptar" onclick="criptografar()">Criptografar</button>
+            <button class="btn-desencriptar" onclick="descriptografar()">Descriptografar</button>
+        </div>
+    </section>
+
+     <!--Onde o texto vai aparecer -->
+    <section>
+    <div class="mensagem" id="output">
+        <img src="/imagens/boneco.png" alt="Boneco pesquisando">
+        <h6>Sua mensagem aparecerá aqui!</h6>
+    </section>
+        
+    </div>
+</main>
+
+<footer>
+    <div class="redes">
+        <p>Minhas redes: </p>
+    
+    <a href="https://github.com/ayalorius/" title="GitHub" target="_blank">            
+        <img src="imagens/github.png" alt="Logo do GitHub em formato circular."
+        width="32" height="32" id="github">
+        GitHub
+    </a>
+     <a href="https://br.linkedin.com/in/jenifer-herrera-said" title="LinkedIn" target="_blank">
+        <img src="imagens/linkedin.png" alt="Logo do LinkedIn em formato circular"
+        width="32" height="32" id="linkedin">
+        LinkedIn
+    </a>
+    <a href="https://www.instagram.com/ayaloriusdesign/" title="Instagram" target="_blank">
+        <img src="/imagens/instagram.png" alt="Logo do Instagram"
+        width="32" height="32" id="instagram">
+        Instagram
+    </a>
+    </div>
+    
+    <div class="credito">
+        <p> Desenvolvido por Jenifer | Alura - 2024</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

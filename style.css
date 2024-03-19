@@ -1,0 +1,227 @@
+*, footer{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+body {
+    background: linear-gradient(#eff1fa, #e9ecf8, #609ed4);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 0 40px;
+}
+
+h1:hover {
+    transition: 0.2s;
+    opacity: 50%;
+}
+
+.logoAlura {
+    margin-left: 10px;
+    padding-top: 10px;
+    width: 6%;
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.text-area {
+    border: none;
+    color: #0A3871;
+    text-transform: lowercase;
+    resize: none;
+    margin-top: 85px;
+    margin-left: 15px;
+    background-color: white;
+    border: 1px solid;
+    border-color: #9dadc4;
+    border-radius: 30px;
+    padding: 0.5rem;
+    text-transform: lowercase;
+    font-size: 26px;
+}
+
+::placeholder {color: #e8e8e8;}
+    .text-area:focus {
+        outline: none;
+    }
+
+#output{
+    background: white;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 108px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mensagem {
+    position: relative;
+    border-color: transparent;
+    border-radius: 30px;
+    padding: 0.5rem;
+}
+
+.mensagem:not(:placeholder-shown) {
+    background-color: white;
+}
+
+.mensagem:focus {
+    outline: none;
+}
+
+.botoes {
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-desencriptar {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.btn-encriptar {
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.btn-copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
+    margin-top: 5%;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+.informacao {
+    color: #495057;
+    font-size: 12px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 9rem;
+    margin-bottom: 3rem;
+}
+.redes {
+    display: inline;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2b2b2b;
+}
+.redes * {
+    vertical-align: middle;
+}
+.redes p {
+    margin-bottom: 15px;
+}
+.redes a {
+    margin: 5px 15px;
+    text-decoration: none;
+    color: #2b2b2b;
+}
+.redes a:hover {
+    transition: 0.5s;
+    opacity: 70%;
+    color: #0a3871;
+}
+.credito {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0A3871;
+    margin-top: 15px;
+}
+
+
+@media screen and (max-width: 820px) {
+    * {
+        font-size: 20px;
+    }
+    header {
+        display: block;
+        margin: 35px 0 0 25px;
+    }
+    .main {
+        display: inline;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .text-area {
+        margin-top: 5rem;
+        max-width: 50%;
+        height: 20%;
+    }
+
+    #output {
+        width: 90%;
+        height: 30%;
+    }
+    .mensagem {
+        margin: 0 auto;
+    }
+    .informacao {
+        margin: 0 auto;
+    }
+    .botoes {
+        display: inline;
+        margin: 15px auto;
+    }
+    button {
+        height: 50px;
+        font-weight: bold;
+    }
+    button:hover {
+        transition: 0.5;
+        transform: none;
+        opacity: 80%;
+    }
+    .btn-encriptar, .btn-desencriptar {
+        width: 50%;
+        margin: 15px auto;
+    }
+    .btn-copiar {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    footer {
+        margin: 2rem auto;
+    }
+    .redes {
+        font-size: 16px;
+    }
+    .redes p {
+        margin-bottom: 10px;
+    }
+    .redes a {
+        margin: 5px;
+    }
+    .credito {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
